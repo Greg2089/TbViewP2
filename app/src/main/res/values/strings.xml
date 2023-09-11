@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TbViewP2</string>
+    <string name="threeTab">FragmentThree</string>
+    <string name="oneTab">FragmentOne</string>
+    <string name="twoTab">FragmentTwo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
