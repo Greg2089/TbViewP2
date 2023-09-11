@@ -3,14 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentThree">
+    tools:context=".MainFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#D69D41"
-        android:gravity="center"
-        android:text="@string/threeTab" />
-
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Button" />
 </FrameLayout>

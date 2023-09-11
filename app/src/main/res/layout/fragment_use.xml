@@ -3,14 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentOne">
+    tools:context=".UseFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/tvUseCase"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#72CF77"
-        android:gravity="center"
-        android:text="@string/oneTab" />
+        android:background="#D69D41"
+        android:padding="10dp"
+        android:text="@string/threeTab" />
 
 </FrameLayout>
