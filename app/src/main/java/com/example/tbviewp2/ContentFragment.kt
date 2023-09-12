@@ -1,12 +1,11 @@
 package com.example.tbviewp2
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import com.example.tbviewp2.databinding.ContentFragmentBinding
 import com.example.tbviewp2.viewModel.MainViewModel
@@ -32,7 +31,7 @@ class ContentFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = ContentFragmentBinding.inflate(inflater, container, false)
         val view = binding.root
@@ -41,6 +40,7 @@ class ContentFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         model.plant.observe(viewLifecycleOwner) {
             binding.imageContent.setImageResource(it.imageId)
         }
